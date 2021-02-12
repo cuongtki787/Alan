@@ -1,7 +1,7 @@
 from tkinter import* 
 
-class MathsQuiz:
-    def __init__(self,parrent):
+class MathQuiz :
+    def __init__(self,parent):
 
         '''Widget for Welcome Frame'''
 
@@ -9,8 +9,8 @@ class MathsQuiz:
         self.Welcome.grid(row=0, column=0)
 
         self.TitleLabel = Label(self.Welcome, text = "Welcome to Math Quiz" , 
-                                bg = "black", fg = "white" , width = 20, padx = 30, pady = 10
-                                font =("Time", '14', 'bold italic'))
+                                bg = "black", fg = "white" , width = 20, padx = 30, pady = 10 ,
+                                font = ("Time", '14', 'bold italic'))
         self.TitleLabel.grid(columnspan = 2)
 
         self.Nextbutton = Button(self.Welcome, text = 'Next')
